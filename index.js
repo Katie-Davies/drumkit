@@ -10,11 +10,13 @@ for (let i = 0; i < buttons.length; i++) {
     let buttonInnerHTML = this.innerHTML
 
     makeSound(buttonInnerHTML)
+    buttonAnimation(buttonInnerHTML)
   })
 }
 
 document.addEventListener('keydown', function (event) {
   makeSound(event.key)
+  buttonAnimation(event.key)
 })
 
 function makeSound(key) {
@@ -51,6 +53,8 @@ function makeSound(key) {
       console.log('I am a drum master')
   }
 }
+
+function buttonAnimation
 //create new sound variable that stores the sound
 //  let crashSound = new Audio('sounds/crash.mp3')
 //  //call on sound
