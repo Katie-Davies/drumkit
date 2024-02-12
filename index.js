@@ -54,7 +54,10 @@ function makeSound(key) {
   }
 }
 
-function buttonAnimation
+function buttonAnimation(currentKey) {
+  let active = document.querySelector('.' + currentKey)
+  active.classList.add('pressed')
+}
 //create new sound variable that stores the sound
 //  let crashSound = new Audio('sounds/crash.mp3')
 //  //call on sound
